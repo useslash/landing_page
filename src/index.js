@@ -1,1 +1,1 @@
-import "./styles.pcss"
+import "../css/styles.pcss"
