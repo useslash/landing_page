@@ -1,0 +1,3 @@
+#!/bin/bash
+
+node_modules/.bin/postcss src/styles.pcss -o styles.dist.css

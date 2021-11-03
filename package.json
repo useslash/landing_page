@@ -1,0 +1,29 @@
+{
+  "name": "slash",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:useslash/landing_page.git",
+  "author": "Slash",
+  "license": "GPL",
+  "scripts": {
+    "build": "webpack --mode=development --config webpack.config.js",
+    "watch": "webpack watch"
+  },
+  "devDependencies": {
+    "css-loader": "^6.5.0",
+    "cssnano": "^5.0.8",
+    "html-webpack-plugin": "^5.5.0",
+    "postcss": "^8.3.11",
+    "postcss-cli": "^8.1.0",
+    "postcss-flexbugs-fixes": "^5.0.2",
+    "postcss-loader": "^6.2.0",
+    "postcss-nested": "^5.0.6",
+    "postcss-preset-env": "^6.7.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.60.0",
+    "webpack-cli": "^4.9.1"
+  },
+  "dependencies": {
+    "tailwindcss": "^2.2.17"
+  }
+}
