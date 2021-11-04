@@ -38,6 +38,12 @@ html {
   }
 }
 
+.collapsed-menu {
+  &_item {
+    @apply font-medium bg-primary-600 text-white p-3 border-b border-white;
+  }
+}
+
 .section_title {
   @apply text-4xl md:text-5xl font-semibold;
 }
@@ -48,7 +54,11 @@ html {
   }
 
   &_divider-content {
-    @apply bg-primary-600 flex items-center justify-center w-12 h-12 rounded-full text-white text-4xl -mt-5;
+    @apply bg-primary-600 flex items-center justify-center w-8 h-8 md:w-12 md:h-12 rounded-full text-white text-xl md:text-4xl -mt-4 md:-mt-5;
+  }
+
+  &_divider-content svg {
+    @apply w-4 h-4 md:w-6 md:h-6;
   }
 
   &_item {

@@ -38,13 +38,19 @@
               <a href="#launch" class="header_button-item">Get Early Access</a>
             </div>
             <div class="md:hidden">
-              <a href="#0" class="">
+              <a id="mobile-menu-button" href="#0">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                 </svg>
               </a>
             </div>
           </div>
+        </div>
+        <div id="mobile-menu" class="flex flex-col justify-center text-center hidden">
+          <a href="#about" class="collapsed-menu_item">How it works</a>
+          <a href="#features" class="collapsed-menu_item">Features</a>
+          <a href="https://blog.useslash.com" target="_blank" class="collapsed-menu_item">Blog</a>
+          <a href="#launch" class="collapsed-menu_item">Get Early Access</a>
         </div>
       </header>
       <section class="hero">
@@ -125,7 +131,7 @@
         </div>
         <div class="description_divider">
           <span class="description_divider-content">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1);transform: rotate(90deg);msFilter:progid:DXImageTransform.Microsoft.BasicImage(rotation=1);"><path d="M15 2.013H9V9H2v6h7v6.987h6V15h7V9h-7z"></path></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1);transform: rotate(90deg);msFilter:progid:DXImageTransform.Microsoft.BasicImage(rotation=1);"><path d="M15 2.013H9V9H2v6h7v6.987h6V15h7V9h-7z"></path></svg>
           </span>
         </div>
         <div class="description_item">
@@ -205,7 +211,7 @@
           <div id="mc_embed_signup" class="flex flex-col sm:flex-row space-y-2.5 sm:space-y-0 justify-center">
             <form action="https://useslash.us5.list-manage.com/subscribe/post?u=5de15f520b8e484148366c2b1&amp;id=59c85c9c73" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
               <div id="mc_embed_signup_scroll" class="flex flex-col sm:flex-row space-y-2.5 sm:space-y-0">
-                <input type="email" value="" name="EMAIL" class="w-full sm:w-72 border-solid border-2 sm:border-r-0 py-4 px-6 rounded-lg sm:rounded-none sm:rounded-tl-lg sm:rounded-bl-lg outline-none border-white focus:border-primary-700" id="mce-EMAIL"
+                <input type="email" value="" name="EMAIL" class="text-black w-full sm:w-72 border-solid border-2 sm:border-r-0 py-4 px-6 rounded-lg sm:rounded-none sm:rounded-tl-lg sm:rounded-bl-lg outline-none border-white focus:border-primary-700" id="mce-EMAIL"
                   placeholder="Your email address" required>
                 <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
                 <div style="position: absolute; left: -5000px;" aria-hidden="true">
@@ -244,5 +250,13 @@
         </div>
       </footer>
     </main>
+    <script>
+      var btn = document.querySelector("#mobile-menu-button");
+      var menu = document.querySelector("#mobile-menu");
+
+      btn.addEventListener("click", function () {
+        menu.classList.toggle("hidden");
+      });
+    </script>
   </body>
 </html>
